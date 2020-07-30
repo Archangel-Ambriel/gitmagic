@@ -37,3 +37,5 @@ fop-zh*
 
 !/.github/workflows/linux-vpn-tool.html
 
+!/.github/workflows/xcshareddata/xcschemes/*
+
