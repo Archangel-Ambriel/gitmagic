@@ -1,0 +1,46 @@
+From db3790dd3c378a61b9df6031c1d249734ab8007c Mon Sep 17 00:00:00 2001
+From: Ambjoern Skoeld🛡 <protection@firewicca.com>
+Date: Thu, 30 Jul 2020 17:35:22 +0200
+Subject: [PATCH] SomeTest.h import
+
+SomeTest.h import
+---
+ SomeTest.h |  6 ++++++
+ SomeTest.m | 12 ++++++++++++
+ 2 files changed, 18 insertions(+)
+ create mode 100644 SomeTest.h
+ create mode 100644 SomeTest.m
+
+diff --git a/SomeTest.h b/SomeTest.h
+new file mode 100644
+index 0000000..5852306
+--- /dev/null
++++ b/SomeTest.h
+@@ -0,0 +1,6 @@
++
++@import XCTest;
++
++@interface SomeTest: XCTestCase 
++
++@end
+diff --git a/SomeTest.m b/SomeTest.m
+new file mode 100644
+index 0000000..bc6447a
+--- /dev/null
++++ b/SomeTest.m
+@@ -0,0 +1,12 @@
++
++@import XCTest;
++#import "SomeTest.h"
++#import <CoconutLib/CoconutLib.h>
++
++@implementation SomeTest: XCTestCase 
++
++- (void) testSomething {
++	CoconutObj *coconut = [CoconutObj new];
++}
++
++@end
+--
+Working Copy 4.3.2
+
